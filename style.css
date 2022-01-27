@@ -1,0 +1,131 @@
+:root {
+  /* size */
+  --margin-small: 10px;
+  --margin-middle: 15px;
+  --margin-large: 20px;
+  /* font size */
+  --font-small: 10px;
+  --font-middle: 15px;
+  --font-large: 20px;
+  --font-ultra: 30px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+/* main title */
+header > .title {
+  border: 1px solid black;
+  text-align: center;
+  padding: var(--margin-large);
+  font-size: var(--font-ultra);
+}
+
+/* main - left( calculate option ) */
+main {
+  display: flex;
+}
+.calculate {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 85vh;
+  position: relative;
+}
+.start-menu {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  padding: var(--margin-middle);
+}
+.start-menu > label {
+  font-size: var(--font-middle);
+  font-weight: bold;
+}
+.end-menu {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  padding: var(--margin-middle);
+}
+.end-menu > label {
+  font-size: var(--font-middle);
+  font-weight: bold;
+}
+.menu {
+  border: 1px solid black;
+  list-style: none;
+  display: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  border-bottom: 1px solid black;
+  width: 100%;
+  box-sizing: border-box;
+  padding: var(--margin-middle);
+}
+.menu a:hover {
+  background-color: bisque;
+}
+
+.select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid black;
+  list-style: none;
+  padding: var(--margin-small);
+}
+.select > i {
+  cursor: pointer;
+}
+
+.value {
+  display: flex;
+  flex-direction: column;
+  padding: var(--margin-middle);
+}
+.value > label {
+  font-weight: bold;
+  font-size: var(--font-middle);
+}
+.resultBtn {
+  padding: var(--margin-small);
+  width: 50%;
+  margin-left: var(--margin-middle);
+}
+.result {
+  flex: 1;
+}
+
+.calc_result {
+  padding: var(--margin-middle);
+  margin: var(--margin-middle);
+  display: flex;
+  flex-direction: column;
+}
+.result-value {
+  border: 1px solid black;
+  height: 40px;
+}
+.description {
+  padding: var(--margin-middle);
+  margin: var(--margin-large);
+  margin-top: calc(3 * var(--margin-large));
+}
+
+.click {
+  display: block;
+}
