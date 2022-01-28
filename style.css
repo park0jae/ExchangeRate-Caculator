@@ -73,26 +73,22 @@ body {
   background-color: white;
   border-radius: 1rem;
 }
+
 .rate {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   list-style: none;
   align-items: center;
   justify-content: center;
-  width: 13%;
+  width: 20%;
 }
-.rate > li {
-  width: 100%;
-  position: relative;
-}
-.rate:first-child {
-  margin-left: 0.8rem;
-}
-.rate > li > i {
-  margin-left: 0.32rem;
-  padding-bottom: 8px;
+.rate .fas {
+  margin-left: 8px;
+  margin-top: 0;
+  position: absolute;
   cursor: pointer;
 }
+
 .swap {
   display: flex;
   flex-direction: row;
@@ -118,14 +114,28 @@ body {
   outline: none;
 }
 
-.rate_list {
+.rate > li {
+  width: 100%;
+  position: relative;
+}
+.rate li a {
+  display: inline-block;
+  width: 100%;
+  color: white;
+}
+.rate > li > ul {
+  position: absolute;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
   list-style: none;
   display: none;
-  position: absolute;
-  width: 144%;
-  background-color: rgb(194, 189, 189, 0.6);
+  background-color: black;
 }
-.rate_list > li > a:hover {
+.main > li > a:hover {
   background-color: bisque;
 }
 
@@ -137,4 +147,11 @@ body {
 .click {
   display: flex;
   flex-direction: column;
+}
+
+.main i {
+  cursor: pointer;
+}
+.swap a {
+  color: blue;
 }
