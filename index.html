@@ -9,62 +9,44 @@
     <title>ExchangeRate Calculator</title>
 </head>
 <body>
-    <!-- main title -->
-    <header>
-        <div class="title">환율 계산기</div>
-    </header>
-
-    <!-- main -->
-    <main>
-        <!-- calculate option-->
-        <section class="calculate">
-            <div class="start-menu">
-                <label for="start-rate">시작 통화</label>
-                <ul class="select">
-                    <li class="menuBtn">select Currency</li>
-                    <i id="startBtn" class="fas fa-chevron-down"></i>
-                </ul>
-                <ul id = start-menu class="menu">
-                    <li><a href="#" class="menu_list">KRW</a></li>
-                    <li><a href="#" class="menu_list">USD</a></li>
-                </ul>
-            </div>
-            <div class="end-menu">
-                <label for="end-rate">변환 통화</label>
-                <ul class="select">
-                    <li class="menuBtn">select Currency</li>
-                    <i id="endBtn" class="fas fa-chevron-down"></i>
-                </ul>
-                <ul id = end-menu class="menu">
-                    <li><a href="#" class="menu_list">KRW</a></li>
-                    <li><a href="#" class="menu_list">USD</a></li>
-                </ul>
-            </div>
-            <div class="value">
-                <label for="value">값을 입력하세요.</label>
-                <input type="text" class="value">
-            </div>
-            <button class="resultBtn">결과</button>
+    <section class="contains">
+        <div class="image">
+            <i class="fas fa-sync-alt"></i>
+        </div>
+        <article class="title">ExchangeRate Calculator</article>
+        <article class="description">
+            <span>Choose the currency and the enter the amounts </span>
+             <span>to get the exchange rate </span>
+        </article>
+        <section class="start-rate">
+            <ul class="rate">
+                <li>KRW
+                    <ul class="rate_list">
+                        <li><a href="#" class="rate1">KRW</a></li>
+                        <li><a href="#" class="rate1">USD</a></li>
+                    </ul>
+                </li>
+                <li><i class="fas fa-sort-down"></i></li>
+            </ul>
+            <input type="number" class = "num" name="" id="">
         </section>
-        <!-- calculate result-->
-        <section class="result">
-            <section class="calc_result">
-                <article>
-                    환산결과
-                </article>
-                <article class = result-value>
-
-                </article>
-            </section>
-           
-            
-            <article class="description">
-                이 프로젝트는 박영재 혼자의 힘으로 완성하자라는 목표로 제작한 
-                프로젝트로 간단한 환율 계산기 프로그램을 제작한 것입니다.
-                기본적인 기능만 구현하다보니 부족한 부분이 많을 것입니다.
-            </article>
+        <section class="swap">
+            <a href="#">swap</a>
+            <article></article>
         </section>
-    </main>
+        <section class="end-rate">
+            <ul class="rate">
+                <li>KRW
+                    <ul class="rate_list">
+                        <li><a href="#" class="rate1">KRW</a></li>
+                        <li><a href="#" class="rate1">USD</a></li>
+                    </ul>
+                </li>
+                <li><i class="fas fa-sort-down"></i></li>
+            </ul>
+            <input type="number" class = "num" name="" id="">
+        </section>
+    </section>
     <script src="main.js"></script>
 </body>
 </html>

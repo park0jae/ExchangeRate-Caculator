@@ -1,131 +1,140 @@
-:root {
-  /* size */
-  --margin-small: 10px;
-  --margin-middle: 15px;
-  --margin-large: 20px;
-  /* font size */
-  --font-small: 10px;
-  --font-middle: 15px;
-  --font-large: 20px;
-  --font-ultra: 30px;
-}
-
 * {
   padding: 0;
   margin: 0;
 }
-
 body,
 html {
   width: 100%;
   height: 100%;
 }
-
-/* main title */
-header > .title {
-  border: 1px solid black;
-  text-align: center;
-  padding: var(--margin-large);
-  font-size: var(--font-ultra);
+body {
+  background-color: #3f51b5;
 }
 
-/* main - left( calculate option ) */
-main {
-  display: flex;
-}
-.calculate {
-  border: 1px solid black;
+.contains {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  height: 85vh;
+  border: 1px solid black;
+  align-items: center;
+  width: 40%;
+  height: 85%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  background-color: #ecebeb;
+}
+.contains .title {
+  font-size: 1.5rem;
+  color: #2962ff;
+  padding: 1rem;
+  font-weight: bold;
+  font-style: oblique;
+}
+.image i {
+  font-size: 4rem;
+  color: #00bfa5;
+  margin-top: 3rem;
+}
+.start-rate > article {
+  border: 1px solid black;
+  width: 70%;
+}
+.end-rate > article {
+  border: 1px solid black;
+  width: 70%;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  color: #bdbdbd;
+}
+.description span {
+  text-align: center;
+  font-size: 0.5rem;
+}
+.start-rate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 1.5rem;
+  padding: 0.5rem 0.5rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+.end-rate {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 0.5rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+.rate {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  width: 13%;
+}
+.rate > li {
+  width: 100%;
   position: relative;
 }
-.start-menu {
-  border: 1px solid red;
+.rate:first-child {
+  margin-left: 0.8rem;
+}
+.rate > li > i {
+  margin-left: 0.32rem;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+.swap {
   display: flex;
-  flex-direction: column;
-  padding: var(--margin-middle);
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-between;
+  margin: 0.2rem;
+  padding: 0.5rem 0.5rem;
 }
-.start-menu > label {
-  font-size: var(--font-middle);
-  font-weight: bold;
-}
-.end-menu {
-  border: 1px solid red;
-  display: flex;
-  flex-direction: column;
-  padding: var(--margin-middle);
-}
-.end-menu > label {
-  font-size: var(--font-middle);
-  font-weight: bold;
-}
-.menu {
+.swap > article {
   border: 1px solid black;
-  list-style: none;
-  display: none;
+  width: 70%;
+}
+.swap > a {
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+.num {
+  text-align: end;
+  padding: 3px;
+  border: none;
+  outline: none;
 }
 
-.menu a {
-  text-decoration: none;
-  color: black;
-  display: inline-block;
-  border-bottom: 1px solid black;
-  width: 100%;
-  box-sizing: border-box;
-  padding: var(--margin-middle);
+.rate_list {
+  list-style: none;
+  display: none;
+  position: absolute;
+  width: 144%;
+  background-color: rgb(194, 189, 189, 0.6);
 }
-.menu a:hover {
+.rate_list > li > a:hover {
   background-color: bisque;
 }
 
-.select {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid black;
-  list-style: none;
-  padding: var(--margin-small);
+.rate1 {
+  text-decoration: none;
+  color: black;
+  width: 100%;
 }
-.select > i {
-  cursor: pointer;
-}
-
-.value {
-  display: flex;
-  flex-direction: column;
-  padding: var(--margin-middle);
-}
-.value > label {
-  font-weight: bold;
-  font-size: var(--font-middle);
-}
-.resultBtn {
-  padding: var(--margin-small);
-  width: 50%;
-  margin-left: var(--margin-middle);
-}
-.result {
-  flex: 1;
-}
-
-.calc_result {
-  padding: var(--margin-middle);
-  margin: var(--margin-middle);
-  display: flex;
-  flex-direction: column;
-}
-.result-value {
-  border: 1px solid black;
-  height: 40px;
-}
-.description {
-  padding: var(--margin-middle);
-  margin: var(--margin-large);
-  margin-top: calc(3 * var(--margin-large));
-}
-
 .click {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }

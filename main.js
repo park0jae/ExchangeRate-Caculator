@@ -1,13 +1,17 @@
-const startBtn = document.querySelector("#startBtn");
-const endBtn = document.querySelector("#endBtn");
-const startMenu = document.querySelector("#start-menu");
-const endMenu = document.querySelector("#end-menu");
+'use strict';
+const startRate = document.querySelector(".start-rate .rate_list");
+const endRate = document.querySelector(".end-rate .rate_list");
+const startBtn = document.querySelector(".start-rate .fas");
+const endBtn = document.querySelector(".end-rate .fas");
 
-startBtn.addEventListener("click", ()=> {
-    startMenu.classList.toggle("click");
-    
-})
+console.log(startRate);
 
-endBtn.addEventListener("click", ()=> {
-    endMenu.classList.toggle("click");
-})
+startBtn.addEventListener("click" , ()=>{
+    startRate.classList.toggle("click");
+});
+
+endBtn.addEventListener("click",()=>{
+    endRate.classList.toggle("click");
+});
+
+
